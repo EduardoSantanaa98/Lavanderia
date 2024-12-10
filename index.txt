@@ -1,0 +1,127 @@
+
+<html lang="pt-BR"><head>
+ <title>Wash Power </title>
+ <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Afacad Flux" rel="stylesheet">
+<style>
+	body {font-family: 'Afacad Flux';font-size: 22px;}
+        nav ul {list-style-type: none;
+            padding: 0;
+            margin: 0;}
+        nav ul li {display: inline-block; 
+            margin-right: 20px;}
+        nav ul li a {text-decoration: none; 
+        color: black;
+            font-size: 18px;}
+        nav ul li a:hover {color: #007BFF;}
+	body {background: linear-gradient(to right, #ff7e5f, #feb47b);}
+        .centralizado {width: 50%; 
+                       margin: 0 auto;
+                       padding: 20px;}
+
+#Cadastro {font-size: 26px;}
+main p {text-align: justify;}
+
+.botao-intuitivo {display: inline-block;
+     background-color: #ff6f00;
+     color: white;
+     padding: 15px 30px;
+     font-size: 18px;
+     font-weight: bold;
+     border-radius: 30px;
+     text-align: center;
+     text-decoration: none;
+     transition: background-color 0.3s, transform 0.3s; margin-top: 20px;}
+
+   .botao-intuitivo:hover {background-color: #feb47b;transform: translateY(-5px);}
+   .botao-intuitivo:active {background-color: #ff4500; transform: translateY(2px);}
+    main p {text-align: justify;
+</style>
+</head>
+<body>
+ <header>
+ <h1>Wash Power</h1>
+ </header>
+ <nav>
+<section class="centralizado">
+ <ul>
+ <li><a href="index.html">HOME</a></li>
+ <li><a href="produtos_e_serviços.html">PRODUTOS E SERVIÇOS</a></li>
+ <li><a href="sobre.html">SOBRE</a></li>
+ </ul>
+ </section></nav>
+ <main>
+ <section>
+ <h1>SEJA BEM-VINDO!</h1>
+ <article>
+ <h1><strong> UM NOVO CONCEITO DE LAVANDERIA.</strong></h1>
+ 
+<p> Deixe-nos cuidar das suas roupas, enquanto isso você cuida do resto! </p>
+
+<a href="produtos_e_serviços.html" class="botao-intuitivo">Conheça os nossos serviços</a>
+ 
+<img src="https://as1.ftcdn.net/v2/jpg/09/47/11/56/1000_F_947115671_A2StprrJccDOd5UN5VeVV48Fvba4lrKD.jpg" alt="Imagem ilustrativa de lavanderia" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+</article>
+</section>
+
+
+<section class="centralizado">
+<h1>A lavanderia que cuida das suas roupas com todo o cuidado que elas merecem!</h1>
+<article>
+<p> Estamos no mercado para transformar a experiência de lavanderia, oferecendo serviços de qualidade com praticidade, eficiência e preços acessíveis. 
+Na Wash Power, sabemos que cada peça de roupa é única e precisa de um tratamento especial. 
+Por isso, oferecemos soluções personalizadas para atender às suas necessidades, desde o simples serviço de lavagem até cuidados delicados com tecidos finos. </p>
+
+
+<section id="Cadastro">
+
+ <h1>Cadastre-se no site.</h1>
+<form class="formulario">
+    <div class="campo">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+    </div>
+    <div class="campo">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div class="campo">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+    </div>
+    
+    <div class="campo">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+    </div>
+    <div class="campo">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+    </div>
+    <div class="campo">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep">
+    </div>
+    
+    <div class="campo">
+        <label for="comentarios">User name:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+    </div>
+
+    <div class="campo">
+        <button type="submit">Enviar</button>
+    </div>
+ </form>  
+ </section>
+
+ <strong></main></strong>
+ <footer style="font-size: 16px;">
+ <section class="centralizado">
+ <b>Desenvolvido por Eduardo</b>
+<p><strong>Rua Abuim Nunes, N° 500. Frei Galvão, Tianguá - CE. 8894002-8922<strong></strong></strong></p><strong><strong>
+</footer>
+ <strong></section></strong>
+
+
+</body>
+</html>

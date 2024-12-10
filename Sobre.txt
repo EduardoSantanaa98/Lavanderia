@@ -1,0 +1,75 @@
+
+<html lang="pt-BR"><head>
+ <title>Wash Power </title>
+ <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Afacad Flux" rel="stylesheet">
+<style>
+	body {font-family: 'Afacad Flux';font-size: 22px;}
+        nav ul {list-style-type: none;
+            padding: 0;
+            margin: 0;}
+        nav ul li {display: inline-block; 
+            margin-right: 20px;}
+        nav ul li a {text-decoration: none; 
+        color: black;
+            font-size: 18px;}
+        nav ul li a:hover {color: #007BFF;}
+	body {background: linear-gradient(to right, #ff7e5f, #feb47b);}
+        .centralizado {width: 50%; 
+                       margin: 0 auto;
+                       padding: 20px;}
+#Cadastro {font-size: 26px;}
+
+
+.botao-intuitivo {
+     display: inline-block;
+     background-color: #ff6f00; /* Cor laranja vibrante */
+     color: white;
+     padding: 15px 30px;
+     font-size: 18px;
+     font-weight: bold;
+     border-radius: 30px; /* Borda arredondada */
+     text-align: center;
+     text-decoration: none;
+     transition: background-color 0.3s, transform 0.3s; /* Efeito de transição */
+     margin-top: 20px;}
+
+   .botao-intuitivo:hover {
+     background-color: #feb47b;
+     transform: translateY(-5px);}
+   .botao-intuitivo:active {
+     background-color: #ff4500;
+     transform: translateY(2px); }
+</style>
+</head>
+<body>
+ <header>
+ <h1>Wash Power</h1>
+ </header>
+ <nav>
+<section class="centralizado">
+ <ul>
+ <li><a href="index.html">HOME</a></li>
+ <li><a href="produtos_e_serviços.html">PRODUTOS E SERVIÇOS</a></li>
+ <li><a href="sobre.html">SOBRE</a></li>
+ <li><a href="contato.html">CONTATO</a></li>
+ </ul>
+ </section></nav>
+ <main>
+ <section>
+ <h1>SEJA BEM-VINDO!</h1>
+ <article>
+ <h1><strong> UM NOVO CONCEITO DE LAVANDERIA.<strong></strong></strong></h1><strong><strong>
+ <p>Deixe-nos cuidar das suas roupas, 
+enquanto isso você cuida do resto!
+</p>
+
+</section>
+ </strong></strong></main><strong><strong>
+ <footer style="font-size: 16px;">
+ <section class="centralizado">
+ <b>Desenvolvido por Eduardo</b>
+<p><strong>Rua Abuim Nunes, N° 500. Frei Galvão, Tianguá - CE<strong></strong></strong></p><strong><strong>
+ </strong></strong></section></footer><strong><strong>
+
+</strong></strong></strong></strong></body></html>
