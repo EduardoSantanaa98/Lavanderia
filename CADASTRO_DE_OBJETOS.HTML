@@ -1,0 +1,110 @@
+
+<html lang="pt-BR"><head>
+ <title>Wash Power </title>
+ <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Afacad Flux" rel="stylesheet">
+<style>
+	body {font-family: 'Afacad Flux';font-size: 22px;}
+        nav ul {list-style-type: none; padding: 0; margin: 0;}
+        nav ul li {display: inline-block; margin-right: 20px;}
+        nav ul li a {text-decoration: none; color: black; font-size: 18px;}
+        nav ul li a:hover {color: #007BFF;}
+	body {background: linear-gradient(to right, #ff7e5f, #feb47b);}
+        .centralizado {width: 50%; margin: 0 auto; padding: 20px;}
+
+#Cadastro {font-size: 26px;}
+main p {text-align: justify;}
+  table {width: 100%; border-collapse: collapse;}
+        table, th, td {border: 1px solid black;}
+        th, td {padding: 8px;
+            text-align: left;}
+
+        input[type="text"], input[type="number"] {padding: 5px; margin: 5px; width: 200px;}
+        button {padding: 5px 10px; cursor: pointer;}
+
+</style>
+</head>
+<body>
+ <header>
+ <h1>Wash Power</h1>
+ </header>
+ <nav>
+<section class="centralizado">
+ <ul>
+ <li><a href="index.html">HOME</a></li>
+ <li><a href="produtos_e_serviços.html">PRODUTOS E SERVIÇOS</a></li>
+ <li><a href="sobre.html">SOBRE</a></li>
+ <li><a href="login.html">LOGIN</a></li>
+ </ul>
+ </section></nav>
+ <main>
+ <section class="centralizado">
+ <h1>ORÇAMENTOS</h1>
+ <h1> CADASTRO DE OBJETOS</h1>
+</section>
+<section class="centralizado">
+     <form id="formCadastro">
+        <input type="hidden" id="editIndex" value="">
+        <label for="nome"> Serviço:</label>
+        <input type="text" id="nome" required><br><br>
+
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" required><br><br>
+
+        <label for="quantidade">Preço:</label>
+        <input type="number" id="quantidade" required><br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+
+  <h2>Objetos Cadastrados</h2>
+    <table id="tabelaObjetos">
+        <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Ações</th>
+              </tr>        
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lavagem Simples</td>
+                <td>Lavar roupas do dia a dia (cama, mesa, banho) </td>
+                <td>R$ 50</td>
+               <td><a href="#">Editar</a> <a href="#">Apagar</a>  </td>
+            </tr>
+             <tr>
+                <td>Lavagem a Seco.</td>
+                <td>Uso de solventes para tecidos delicados </td>
+                <td>R$ 62</td>
+               <td><a href="#">Editar</a> <a href="#">Apagar</a>  </td>
+            </tr>
+            <tr>
+                <td>Lavagem de Roupas Delicadas</td>
+                <td>Para tecidos como seda, lã e roupas íntimas	 </td>
+                <td>R$ 60</td>
+               <td><a href="#">Editar</a> <a href="#">Apagar</a>  </td>
+            </tr>
+             <tr>
+                <td>Lavagem Industrial</td>
+                <td>Lavagem em grande escala para empresas</td>
+                <td>Sob consulta</td>
+               <td><a href="#">Editar</a> <a href="#">Apagar</a>  </td>
+            </tr>
+
+</thead>
+       </table>
+
+ <strong></main></strong>
+ <footer style="font-size: 16px;">
+ <section class="centralizado">
+ <b>Desenvolvido por Eduardo Santana</b>
+<p><strong>Rua Abuim Nunes, N° 500. Frei Galvão, Tianguá - CE. 8894002-8922<strong></strong></strong></p><strong><strong>
+</footer>
+ <strong></section></strong>
+
+
+</body>
+</html>
