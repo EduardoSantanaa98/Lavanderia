@@ -1,26 +1,31 @@
-body {
-    font-family: 'Afacad Flux', sans-serif;
+body {font-family: 'Afacad Flux', sans-serif;
     font-size: 22px;
     background: linear-gradient(to right, #ff7e5f, #feb47b);}
 
-nav ul {list-style-type: none; padding: 0; margin: 0;}
+nav ul {list-style-type: none;
+    padding: 0;
+    margin: 0;}
 
-nav ul li {display: inline-block; margin-right: 20px;}
+nav ul li {display: inline-block;
+    margin-right: 20px;}
 
-nav ul li a {text-decoration: none; color: black; font-size: 18px;}
+nav ul li a {text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;}
 
 nav ul li a:hover {color: #007BFF;}
 
-.centralizado {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;}
+.centralizado {width: 50%;
+    margin: 0 auto; padding: 20px;}
 
 #Cadastro {font-size: 26px;}
 
 main p {text-align: justify;}
 
-table {width: 100%; border-collapse: collapse; margin-top: 30px;}
+table {width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;}
 
 th, td {padding: 12px;
     text-align: center;
@@ -29,11 +34,13 @@ th, td {padding: 12px;
 th {background-color: #ff7e5f;
     color: white;}
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {
+    background-color: #f2f2f2;}
 
 tr:hover {background-color: #f1c40f;}
 
-.tabela-container {border: 4px solid #ff7e5f;
+.tabela-container {
+    border: 4px solid #ff7e5f;
     border-radius: 15px;
     padding: 20px;
     background-color: #fff3e0;
@@ -46,8 +53,10 @@ form {margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 
-form input[type="text"], form input[type="number"], form textarea {
-    width: 100%;
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],  
+form textarea {width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
