@@ -69,10 +69,14 @@ table a {
     color: #007BFF;
     text-decoration: none;
     padding: 5px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 table a:hover {
-    color: #ff4500;
+    background-color: #007BFF;
+    color: white;
 }
 
 .tabela-container {
@@ -136,7 +140,8 @@ form button:active {
 footer {
     font-size: 16px;
     background-color: #f9f9f9; 
-    padding: 10px 0; }
+    padding: 10px 0;
+}
 
 footer .centralizado {
     text-align: center;
