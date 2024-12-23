@@ -126,12 +126,6 @@ p {font-size: 18px;
 .botao-intuitivo:active {background-color: #ff4500;
     transform: translateY(2px);}
 
-img.img-fluid {display: block; 
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px; }
-section {text-align: center;}
-
 @media (min-width: 768px) {
     body {font-size: 20px;}
     header h1 {font-size: 30px;}
