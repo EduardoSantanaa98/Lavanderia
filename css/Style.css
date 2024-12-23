@@ -11,22 +11,27 @@ header {background-color: #ff7e5f;
 header h1 {color: white;
     font-size: 24px;}
 
-.menu-toggle {display: none;}
-
-.menu-open, .menu-close {font-size: 30px;
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
     color: white;
     cursor: pointer;
-    position: absolute;
-    top: 15px;
-    z-index: 10;}
+}
 
-.menu-open {left: 20px;}
-.menu-close {right: 20px;
-    display: none;}
-.menu-toggle:checked + .menu-open {display: none; }
-.menu-toggle:checked + .menu-open + 
-.menu-close {display: block;}
-.menu-toggle:checked ~ nav ul {display: block;}
+#menu {display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;}
+
+.menu-open #menu {display: block;}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: inline-block;}
+}
 
 nav ul {list-style-type: none;
     padding: 0;
@@ -152,20 +157,6 @@ p {font-size: 18px;
 
     .centralizado {width: 70%;}
                           }
-
-@media (max-width: 768px) {nav ul li {text-align: left;
-        padding-left: 20px;}}
-
-.centralizado {width: 80%;
-    margin: 0 auto;
-    padding: 15px;}
-
-footer {font-size: 14px;
-    background-color: #f9f9f9;
-    padding: 10px 0;
-    text-align: center;}
-
-footer p {color: #333;}
 
 @media (min-width: 1024px) {
     body {font-size: 22px;}
