@@ -14,7 +14,7 @@ header h1 {color: white;
 nav ul {list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: center; 
+    text-align: center;}
 
 nav ul li {display: inline-block;
     margin-right: 10px;}
@@ -126,14 +126,15 @@ p {font-size: 18px;
 .botao-intuitivo:active {background-color: #ff4500;
     transform: translateY(2px);}
 
-@media (min-width: 768px) {body {font-size: 20px;}
+@media (min-width: 768px) {
+    body {font-size: 20px;}
 
     header h1 {font-size: 30px;}
 
     nav ul li {margin-right: 15px;}
 
     .centralizado {width: 70%;}
-                          }
+}
 
 @media (min-width: 1024px) {
     body {font-size: 22px;}
@@ -142,5 +143,4 @@ p {font-size: 18px;
 
     nav ul li {margin-right: 20px;}
 
-    .centralizado {width: 60%;}
-}
+    .centralizado {width: 60%;}}
