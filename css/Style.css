@@ -126,14 +126,48 @@ p {font-size: 18px;
 .botao-intuitivo:active {background-color: #ff4500;
     transform: translateY(2px);}
 
-@media (min-width: 768px) {
-    body {font-size: 20px;}
-    header h1 {font-size: 30px;}
-    nav ul li {margin-right: 15px;}
-    .centralizado {width: 70%;}}
+@media (max-width: 767px) {
+    body {font-size: 16px;}
+
+    header h1 {font-size: 20px;}
+
+    nav ul li {display: block; 
+        margin-bottom: 10px;}
+
+    nav ul li a {font-size: 14px;
+        padding: 10px;}
+
+    .centralizado {width: 90%;
+        padding: 10px;}
+
+    .login-container {padding: 15px; 
+        margin-top: 10px;}
+
+    form button {padding: 12px 25px; 
+        font-size: 16px;}
+
+    table th, table td {padding: 8px;}
+
+    table a {font-size: 14px;}
+
+    article {padding: 15px;}
+
+    h1 {font-size: 24px;}
+
+    h2 {font-size: 20px;}
+
+    p {font-size: 16px; }
+
+    .botao-intuitivo {padding: 12px 25px;
+        font-size: 16px;}
+
+    footer {font-size: 12px;
+        padding: 8px 0;}
 
 @media (min-width: 1024px) {
     body {font-size: 22px;}
     header h1 {font-size: 36px;}
     nav ul li {margin-right: 20px;}
     .centralizado {width: 60%;}}
+
+}
