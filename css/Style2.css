@@ -1,22 +1,43 @@
-body {font-family: 'Afacad Flux', sans-serif;
-    font-size: 18px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+:root {
+    --cor-principal: #ff7e5f;      
+    --cor-secundaria: #feb47b;      
+    --cor-destaque: #007BFF;        
+    --cor-fundo: #fff3e0;           
+    --cor-titulo: #333;             
+    --cor-link: #007BFF;            
+    --cor-link-hover: #007BFF;      
+    --cor-link-active: #ff4500;     
+    --cor-tabela: #ddd;             
+    --cor-borda: #007BFF;           
+    --cor-footer: #333;             
+
+   
+    --fonte-principal: 'Afacad Flux', sans-serif;  
+    --fonte-secundaria: 'Arial', sans-serif;       
+    --tamanho-fonte-padrao: 18px;                  
+    --tamanho-fonte-titulo: 24px;                  
+    --tamanho-fonte-subtitulo: 16px;}
+
+body {font-family: var(--fonte-principal);
+    font-size: var(--tamanho-fonte-padrao);
+    background: linear-gradient(to right, var(--cor-principal), var(--cor-secundaria));
     margin: 0;
     padding: 0;}
 
-header {background-color: #ff7e5f;
+header {background-color: var(--cor-principal);
     padding: 10px;
     text-align: center;}
 
 header h1 {color: white;
-    font-size: 24px;}
+    font-size: var(--tamanho-fonte-titulo);}
 
 nav {position: fixed;
     top: 0; 
     left: 0;
     width: 200px;
     height: 100%; 
-    background-color: #ff7e5f; 
+    background-color: var(--cor-principal); 
     padding-top: 20px; 
     z-index: 1000;}
 
@@ -33,13 +54,15 @@ nav ul li a {text-decoration: none;
     padding: 10px;
     display: block;}
 
-nav ul li a:hover {color: #007BFF;}
+nav ul li a:hover {color: var(--cor-destaque);}
 
 main {margin-left: 220px;
     padding: 20px;}
 
 footer {margin-left: 220px;
-    padding: 20px;}
+        padding: 20px;
+        background-color: var(--cor-footer);
+        color: white;}
 
 .login-container {background-color: #fff3e0;
     padding: 20px;
@@ -71,7 +94,7 @@ table {width: 100%;
 
 th, td {padding: 12px;
     text-align: center;
-    border: 1px solid #ddd;}
+    border: 1px solid var(--cor-tabela);}
 
 th {background-color: #ff7e5f;
     color: white;}
@@ -80,18 +103,18 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 tr:hover {background-color: #f1c40f;}
 
-table a {color: #007BFF;
+table a {color: var(--cor-link);
     text-decoration: none;
     padding: 5px 10px;
-    border: 1px solid #007BFF;
+    border: 1px solid var(--cor-link);
     border-radius: 5px;
     transition: background-color 0.3s;}
 
-table a:hover {background-color: #007BFF;
+table a:hover {background-color: var(--cor-link);
     color: white;}
 
 article {padding: 20px;
-    background-color: #fff3e0;
+    background-color: var(--cor-fundo);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 
@@ -121,13 +144,13 @@ article p {font-size: 18px;
 section {margin-bottom: 40px;
     padding: 20px;}
 
-h1 {font-size: 28px;
+h1 {font-size: var(--tamanho-fonte-titulo);
     font-weight: bold;}
 
-h2 {font-size: 24px;
+h2 {font-size: var(--tamanho-fonte-subtitulo);
     font-weight: bold;}
 
-p {font-size: 18px;
+p {font-size: var(--tamanho-fonte-padrao);
     line-height: 1.6;}
 
 .botao-intuitivo {display: inline-block;
