@@ -100,6 +100,23 @@ article p {font-size: 18px;
     color: #333;
     margin-bottom: 20px;}
 
+.centralizado article {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px; }
+
+.centralizado article h1 {
+    font-size: 24px;
+    color: #ff7e5f;
+    margin-bottom: 10px;}
+
+.centralizado article p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;}
+
+
 section {margin-bottom: 40px;
     padding: 20px;}
 
