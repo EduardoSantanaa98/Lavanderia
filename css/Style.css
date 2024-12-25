@@ -108,7 +108,7 @@ h2 {font-size: 24px;
 p {font-size: 18px;
     line-height: 1.6;
     text-align: justify;}
-
+p {text-align: justify;}
 
 .botao-intuitivo {display: inline-block;
     background-color: #ff6f00;
