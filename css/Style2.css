@@ -1,23 +1,24 @@
 
 :root {
-    --cor-principal: #ff7e5f;      
-    --cor-secundaria: #feb47b;      
+    --cor-principal: #5CA4D8;      
+    --cor-secundaria: #003366;      
     --cor-destaque: #007BFF;        
-    --cor-fundo: #fff3e0;           
+    --cor-fundo: #B3D9FF;           
     --cor-titulo: #333;             
     --cor-link: #007BFF;            
     --cor-link-hover: #007BFF;      
     --cor-link-active: #ff4500;     
     --cor-tabela: #ddd;             
     --cor-borda: #007BFF;           
-    --cor-footer: #333;             
+    --cor-footer: #333;  
+    --cor-complementar: #A3C8FF;
 
    
     --fonte-principal: 'Afacad Flux', sans-serif;  
     --fonte-secundaria: 'Arial', sans-serif;       
     --tamanho-fonte-padrao: 18px;                  
-    --tamanho-fonte-titulo: 24px;                  
-    --tamanho-fonte-subtitulo: 16px;}
+    --tamanho-fonte-titulo: 28px;                  
+    --tamanho-fonte-subtitulo: 24px;}
 
 body {font-family: var(--fonte-principal);
     font-size: var(--tamanho-fonte-padrao);
