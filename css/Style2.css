@@ -1,4 +1,3 @@
-
 :root {
     --cor-principal: #5CA4D8;      
     --cor-secundaria: #003366;      
@@ -13,16 +12,16 @@
     --cor-footer: #333;  
     --cor-complementar: #A3C8FF;
 
-   
     --fonte-principal: 'Afacad Flux', sans-serif;  
     --fonte-secundaria: 'Arial', sans-serif;       
+ 
     --tamanho-fonte-padrao: 18px;                  
     --tamanho-fonte-titulo: 28px;                  
     --tamanho-fonte-subtitulo: 24px;}
 
 body {font-family: var(--fonte-principal);
-    font-size: var(--tamanho-fonte-padrao);
-    background: linear-gradient(to right, var(--cor-principal), var(--cor-secundaria));
+      font-size: var(--tamanho-fonte-padrao);
+      background: linear-gradient(to right, var(--cor-principal), var(--cor-secundaria));
     margin: 0;
     padding: 0;}
 
@@ -62,7 +61,7 @@ main {margin-left: 220px;
 
 footer {margin-left: 220px;
         padding: 20px;
-        background-color: var(--cor-footer);
+        background-color: var(--cor-secundaria);
         color: white;}
 
 .login-container {background-color: #fff3e0;
@@ -155,7 +154,7 @@ p {font-size: var(--tamanho-fonte-padrao);
     line-height: 1.6;}
 
 .botao-intuitivo {display: inline-block;
-    background-color: #ff6f00;
+    background-color: var(--cor-destaque);
     color: white;
     padding: 15px 30px;
     font-size: 18px;
@@ -166,7 +165,7 @@ p {font-size: var(--tamanho-fonte-padrao);
     transition: background-color 0.3s, transform 0.3s;
     margin-top: 20px;}
 
-.botao-intuitivo:hover {background-color: #feb47b;
+.botao-intuitivo:hover {background-color: var(--cor-principal); 
     transform: translateY(-5px);}
 
 .botao-intuitivo:active {background-color: #ff4500;
