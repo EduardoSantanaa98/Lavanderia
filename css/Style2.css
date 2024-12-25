@@ -152,8 +152,11 @@ p {font-size: 18px;
     align-items: center; 
     justify-content: space-between;}
 
-.intro-container img {max-width: 40%;
-    margin-left: 20px;}
+.intro-container img {
+    width: 40%;
+    height: auto;
+    margin-left: 20px;
+    max-width: none;}
 
 @media (max-width: 767px) {
     body {font-size: 16px;}
