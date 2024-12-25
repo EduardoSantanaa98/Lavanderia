@@ -71,7 +71,8 @@ footer {margin-left: 220px;
     margin-top: 20px;
     text-align: center;}
 
-form button {background-color: #ff6f00;
+form button {font-family: var(--fonte-secundaria);
+    background-color: #ff6f00;
     color: white;
     padding: 15px 30px;
     font-size: 18px;
@@ -103,7 +104,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 tr:hover {background-color: #f1c40f;}
 
-table a {color: var(--cor-link);
+table a {font-family: var(--fonte-secundaria);
+    color: var(--cor-link);
     text-decoration: none;
     padding: 5px 10px;
     border: 1px solid var(--cor-link);
@@ -145,9 +147,11 @@ section {margin-bottom: 40px;
     padding: 20px;}
 
 h1 {font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-secundaria);
     font-weight: bold;}
 
 h2 {font-size: var(--tamanho-fonte-subtitulo);
+    font-family: var(--fonte-secundaria);
     font-weight: bold;}
 
 p {font-size: var(--tamanho-fonte-padrao);
