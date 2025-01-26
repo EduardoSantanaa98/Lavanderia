@@ -27,7 +27,8 @@ body {font-family: var(--fonte-principal);
 
 header {background-color: var(--cor-principal);
     padding: 10px;
-    text-align: center;}
+    text-align: center;
+    border-bottom: 2px solid var(--cor-borda);}
 
 header h1 {color: white;
     font-size: var(--tamanho-fonte-titulo);}
@@ -39,7 +40,8 @@ nav {position: fixed;
     height: 100%; 
     background-color: var(--cor-principal); 
     padding-top: 20px; 
-    z-index: 1000;}
+    z-index: 1000;
+    border-right: 2px solid var(--cor-borda);}
 
 nav ul {list-style-type: none;
     padding: 0;
@@ -57,19 +59,22 @@ nav ul li a {text-decoration: none;
 nav ul li a:hover {color: var(--cor-destaque);}
 
 main {margin-left: 220px;
-    padding: 20px;}
+    padding: 20px;
+    border-left: 2px solid var(--cor-borda);}
 
 footer {margin-left: 220px;
     padding: 20px;
     background-color: var(--cor-secundaria);
-    color: white;}
+    color: white;
+    border-top: 2px solid var(--cor-borda);}
 
 .login-container {background-color: #fff3e0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    text-align: center;}
+    text-align: center;
+    border: 2px solid var(--cor-borda);}
 
 form button {font-family: var(--fonte-secundaria);
     background-color: #ff6f00;
@@ -81,7 +86,8 @@ form button {font-family: var(--fonte-secundaria);
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-    margin-top: 20px;}
+    margin-top: 20px;
+    border: 2px solid var(--cor-borda);}
 
 form button:hover {background-color: #feb47b;
     transform: translateY(-5px);}
@@ -91,7 +97,8 @@ form button:active {background-color: #ff4500;
 
 table {width: 100%;
     border-collapse: collapse;
-    margin-top: 30px;}
+    margin-top: 30px;
+    border: 2px solid var(--cor-borda);}
 
 th, td {padding: 12px;
     text-align: center;
@@ -118,7 +125,8 @@ table a:hover {background-color: var(--cor-link);
 article {padding: 20px;
     background-color: var(--cor-fundo);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--cor-borda);}
 
 article p {font-size: 18px;
     line-height: 1.6;
@@ -163,7 +171,8 @@ p {font-size: var(--tamanho-fonte-padrao);
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-    margin-top: 20px;}
+    margin-top: 20px;
+    border: 2px solid var(--cor-borda);}
 
 .botao-intuitivo:hover {background-color: var(--cor-principal); 
     transform: translateY(-5px);}
@@ -173,7 +182,8 @@ p {font-size: var(--tamanho-fonte-padrao);
 
 .intro-container {display: flex;
     align-items: center; 
-    justify-content: space-between;}
+    justify-content: space-between;
+    border: 2px solid var(--cor-borda);}
 
 .intro-container img {width: 40%;
     height: auto;
@@ -183,26 +193,26 @@ p {font-size: var(--tamanho-fonte-padrao);
 .img-fluid-second {max-width: 100%;
     height: auto;}
 
-
 @media (max-width: 767px) {
     body {font-size: 16px;}
-
+                           
     header h1 {font-size: 20px;}
 
-    nav ul li {display: block;
+        nav ul li {display: block;
         margin-bottom: 10px;}
 
     nav ul li a {font-size: 14px;
         padding: 10px;}
 
-     .centralizado {width: 90%;
+    .centralizado {width: 90%;
         padding: 10px;}
-
+    
     .login-container {padding: 15px;
         margin-top: 10px;}
 
     form button {padding: 12px 25px;
         font-size: 16px;}
+
 
     table th, table td {padding: 8px;}
 
@@ -213,10 +223,11 @@ p {font-size: var(--tamanho-fonte-padrao);
     .centralizado article {grid-template-columns: 1fr;}
 
     h1 {font-size: 24px;}
+
     h2 {font-size: 20px;}
 
     p {font-size: 16px;}
-  
+
     img.img-fluid {max-width: 100%;
         height: auto;}
 
@@ -234,7 +245,7 @@ p {font-size: var(--tamanho-fonte-padrao);
         padding: 8px 0;}}
 
 @media (min-width: 1024px) {
-   body {font-size: 22px;}
+    body {font-size: 22px;}
 
     header h1 {font-size: 36px;}
 
