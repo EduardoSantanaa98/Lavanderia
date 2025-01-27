@@ -9,7 +9,8 @@
     --tamanho-base: 18px;
     --tamanho-titulo: 28px;
     --peso-fonte-titulo: bold;
-    --peso-fonte-texto: normal;}
+    --peso-fonte-texto: normal;
+}
 
 body {font-family: var(--fonte-principal);
     font-size: var(--tamanho-base);
@@ -29,15 +30,18 @@ header h1 {color: white;
 nav ul {list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: center;}
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: none;}
 
-nav ul li {display: inline-block;
-    margin-right: 10px;}
+nav ul li {margin-bottom: 10px;
+    display: block;}
 
 nav ul li a {text-decoration: none;
     color: black;
     font-size: 16px;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid transparent;
     border-radius: 5px;
     transition: background-color 0.3s, border-color 0.3s;}
@@ -46,118 +50,47 @@ nav ul li a:hover {color: var(--cor-destaque);
     background-color: #f2f2f2;
     border-color: var(--cor-destaque);}
 
-.colecao-objetos {display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 20px;}
-
-.colecao-objetos .item-objeto {
-    padding: 20px;
-    background-color: #fff3e0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
-
-.centralizado {width: 80%;
-    margin: 0 auto;
-    padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 8px;}
-
-footer {font-size: 14px;
-    background-color: var(--cor-fundo);
-    padding: 10px 0;
-    text-align: center;
-    border-top: 2px solid #ddd;}
-
-footer p {color: var(--cor-texto);}
-
-.login-container {background-color: #fff3e0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    text-align: center;}
-
-form button, .botao-intuitivo {background-color: var(--cor-principal);
+#botao-menu {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    border: 2px solid var(--cor-principal);
-    border-radius: 30px;
-    text-align: center;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 20px;}
+    padding: 10px;
+    display: block;}
 
-form button:hover, .botao-intuitivo:hover {
-    background-color: var(--cor-secundaria);
-    border: 2px solid var(--cor-secundaria);
-    transform: translateY(-5px);}
+#botao-menu::before {
+    content: '\2630';}
 
-form button:active, .botao-intuitivo:active {
-    background-color: #ff4500;
-    transform: translateY(2px);}
+#botao-fechar {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    display: none;}
 
-table {width: 100%;
-    border-collapse: collapse;
-    margin-top: 30px;
-    border: 2px solid #ddd;}
+#botao-fechar::before {content: '\2716';}
 
-th, td {padding: 12px;
-    text-align: center;
-    border: 1px solid #ddd;}
+#menu-toggle {
+    display: none;}
 
-th {background-color: var(--cor-principal);
-    color: white;}
+#menu-toggle:checked + #menu {
+    display: block;}
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+#menu-toggle:checked + #menu + #botao-menu {
+    display: none;}
 
-tr:hover {background-color: #f1c40f;}
+#menu-toggle:checked + #menu + #botao-menu + #botao-fechar {
+    display: block;}
 
-table a {color: var(--cor-destaque);
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid var(--cor-destaque);
-    border-radius: 5px;
-    transition: background-color 0.3s;}
 
-table a:hover {background-color: var(--cor-destaque);
-    color: white;}
-
-article {padding: 20px;
-    background-color: #fff3e0;
-    border: 2px solid var(--cor-principal);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
-
-article p {font-size: 18px;
-    line-height: 1.6;
-    color: var(--cor-texto);
-    margin-bottom: 20px;
-    text-align: justify;}
-
-section {margin-bottom: 40px;
-    padding: 20px;}
-
-h1 {font-size: var(--tamanho-titulo);
-    font-weight: var(--peso-fonte-titulo);}
-
-h2 {font-size: 24px;
-    font-weight: var(--peso-fonte-titulo);}
-
-p {font-size: var(--tamanho-base);
-    line-height: 1.6;
-    font-weight: var(--peso-fonte-texto);}
-
-.img-fluid, .img-fluid-second {max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #ddd;
-    border-radius: 8px;}
+@media print {nav, #menu, #botao-menu, #botao-fechar {
+        display: none;}}
 
 @media (max-width: 767px) {
-    body {font-size: 16px;}
+body {font-size: 16px;}
 
     header h1 {font-size: 20px;}
 
@@ -176,13 +109,15 @@ p {font-size: var(--tamanho-base);
     .centralizado {width: 90%;
         padding: 10px;}
 
-    .login-container {padding: 15px;
+    .login-container {
+        padding: 15px;
         margin-top: 10px;}
 
     form button {padding: 12px 25px;
         font-size: 16px;}
 
-    table th, table td {padding: 8px;}
+    table th,
+    table td {padding: 8px;}
 
     table a {font-size: 14px;}
 
@@ -194,7 +129,8 @@ p {font-size: var(--tamanho-base);
 
     p {font-size: 16px;}
 
-    .img-fluid, .img-fluid-second {
+    .img-fluid,
+    .img-fluid-second {
         max-width: 100%;
         height: auto;}
 
@@ -207,7 +143,18 @@ p {font-size: var(--tamanho-base);
     footer {font-size: 12px;
         padding: 8px 0;}
 
-    .colecao-objetos {grid-template-columns: 1fr;}}
+    #menu {display: none;}
+
+    #botao-menu {
+        display: block;}
+
+    #botao-fechar {
+        display: block;}
+
+    #menu-toggle {display: block;}
+
+    #menu-toggle:checked + #menu {display: block;}
+}
 
 @media (min-width: 1024px) {
     body {font-size: 22px;}
@@ -219,23 +166,3 @@ p {font-size: var(--tamanho-base);
     .centralizado {width: 60%;}
 
     .colecao-objetos {grid-template-columns: repeat(3, 1fr);}}
-
-#menu {display: none;}
-
-#menu.aberto {display: block;}
-
-#botao-menu {display: block;}
-
-#botao-fechar {display: none;}
-
-#botao-menu.ativo + #menu {
-    display: block;}
-
-@media (max-width: 767px) {
-    #menu {display: none;}
-
-    #botao-menu {display: block;}
-
-    #botao-fechar {display: block;}
-
-    #menu.aberto {display: block;}}
