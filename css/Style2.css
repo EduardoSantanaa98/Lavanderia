@@ -193,13 +193,11 @@ p {font-size: var(--tamanho-fonte-padrao);
 .img-fluid-second {max-width: 100%;
     height: auto;}
 
-@media (max-width: 767px) {
-
-    nav {
+@media (max-width: 767px) {nav {
         position: fixed;
         top: 0;
         left: 0;
-        width: 70%;
+        width: 50%;  
         height: 100%;
         background-color: var(--cor-principal);
         padding-top: 20px;
@@ -207,40 +205,23 @@ p {font-size: var(--tamanho-fonte-padrao);
         border-right: 2px solid var(--cor-borda);
         overflow-y: auto;}
 
-    main {margin-left: 70%;
+    main {margin-left: 50%;
         padding: 10px;}
 
-    nav ul {list-style-type: none;
-        padding: 0;
-        margin: 0;}
-
-    nav ul li {display: block;
-        margin-bottom: 10px;}
-
-    nav ul li a {text-decoration: none;
-        color: white;
-        font-size: 16px;
-        padding: 10px;
-        display: block;
-        text-align: center;}
-
-    nav ul li a:hover {color: var(--cor-destaque);}
-    
-    footer {font-size: 12px;
-        padding: 8px 0;}
-
-    .img-fluid, .img-fluid-second {
-        width: 100%;
+    .img-fluid, .img-fluid-second {width: 100%;
         height: auto;}
 
-    .centralizado article {
-        grid-template-columns: 1fr;
+    footer {font-size: 12px;
+        padding: 10px 0;}
+
+    .centralizado article {grid-template-columns: 1fr;
         gap: 15px;
         margin-top: 15px;}
 
-    .botao-intuitivo {padding: 12px 25px;
+    .botao-intuitivo {
+        padding: 12px 25px;
         font-size: 16px;}
-    
+
     #Cadastro h1 {font-size: 20px;}
 
     #Cadastro .botao-intuitivo {width: 100%;
@@ -253,4 +234,8 @@ p {font-size: var(--tamanho-fonte-padrao);
 
     nav ul li {margin-right: 20px;}
 
-    .centralizado {width: 60%;}}
+    .centralizado {width: 60%;}
+
+    .img-fluid, .img-fluid-second {
+        max-width: 100%;
+        height: auto;}}
