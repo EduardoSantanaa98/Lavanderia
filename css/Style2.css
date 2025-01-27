@@ -195,54 +195,57 @@ p {font-size: var(--tamanho-fonte-padrao);
 
 @media (max-width: 767px) {
     body {font-size: 16px;}
-                           
-    header h1 {font-size: 20px;}
 
-        nav ul li {display: block;
+    header h1 {font-size: 20px;
+               
+    nav {position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-principal);
+        padding-top: 10px;}
+
+    nav ul {list-style-type: none;
+        padding: 0;
+        margin: 0;}
+
+    nav ul li {display: block;
         margin-bottom: 10px;}
 
-    nav ul li a {font-size: 14px;
+    nav ul li a {text-decoration: none;
+        color: white;
+        font-size: 14px;
+        padding: 10px;
+        display: block;
+        text-align: center;}
+
+    main {margin-left: 0;
         padding: 10px;}
 
-    .centralizado {width: 90%;
-        padding: 10px;}
+    footer {font-size: 12px;
+        padding: 8px 0;}
     
-    .login-container {padding: 15px;
-        margin-top: 10px;}
-
-    form button {padding: 12px 25px;
-        font-size: 16px;}
-
-
-    table th, table td {padding: 8px;}
-
-    table a {font-size: 14px;}
-
-    article {padding: 15px;}
-
-    .centralizado article {grid-template-columns: 1fr;}
-
-    h1 {font-size: 24px;}
-
-    h2 {font-size: 20px;}
-
-    p {font-size: 16px;}
-
-    img.img-fluid {max-width: 100%;
+    .img-fluid, .img-fluid-second {
+        width: 100%;
         height: auto;}
+
+    .centralizado article {grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 15px;}
+
+    .botao-intuitivo {padding: 12px 25px;
+        font-size: 16px;}
 
     .intro-container {flex-direction: column;
         padding: 10px;}
 
     .intro-container img {width: 100%;
-        height: auto;
-        max-width: 100%;}
+        height: auto;}
 
-    .botao-intuitivo {padding: 12px 25px;
-        font-size: 16px;}
+    #Cadastro h1 {font-size: 20px;}
 
-    footer {font-size: 12px;
-        padding: 8px 0;}}
+    #Cadastro .botao-intuitivo {width: 100%;
+        padding: 15px 0;}}
 
 @media (min-width: 1024px) {
     body {font-size: 22px;}
