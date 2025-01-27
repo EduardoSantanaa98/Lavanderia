@@ -29,15 +29,17 @@ header h1 {color: white;
 nav ul {list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: center;}
+    text-align: center;
+    display: flex;
+    flex-direction: column;}
 
-nav ul li {display: inline-block;
-    margin-right: 10px;}
+nav ul li {margin-bottom: 10px;
+    display: block;}
 
 nav ul li a {text-decoration: none;
     color: black;
     font-size: 16px;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid transparent;
     border-radius: 5px;
     transition: background-color 0.3s, border-color 0.3s;}
@@ -46,7 +48,8 @@ nav ul li a:hover {color: var(--cor-destaque);
     background-color: #f2f2f2;
     border-color: var(--cor-destaque);}
 
-.colecao-objetos {display: grid;
+.colecao-objetos {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 20px;}
@@ -57,11 +60,13 @@ nav ul li a:hover {color: var(--cor-destaque);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 
-.centralizado {width: 80%;
+.centralizado {
+    width: 80%;
     margin: 0 auto;
     padding: 15px;
     border: 2px solid #ddd;
     border-radius: 8px;}
+
 
 footer {font-size: 14px;
     background-color: var(--cor-fundo);
@@ -71,14 +76,17 @@ footer {font-size: 14px;
 
 footer p {color: var(--cor-texto);}
 
-.login-container {background-color: #fff3e0;
+.login-container {
+    background-color: #fff3e0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     text-align: center;}
 
-form button, .botao-intuitivo {background-color: var(--cor-principal);
+form button,
+.botao-intuitivo {
+    background-color: var(--cor-principal);
     color: white;
     padding: 15px 30px;
     font-size: 18px;
@@ -89,28 +97,33 @@ form button, .botao-intuitivo {background-color: var(--cor-principal);
     transition: background-color 0.3s, transform 0.3s;
     margin-top: 20px;}
 
-form button:hover, .botao-intuitivo:hover {
+form button:hover,
+.botao-intuitivo:hover {
     background-color: var(--cor-secundaria);
     border: 2px solid var(--cor-secundaria);
     transform: translateY(-5px);}
 
-form button:active, .botao-intuitivo:active {
+form button:active,
+.botao-intuitivo:active {
     background-color: #ff4500;
     transform: translateY(2px);}
+
 
 table {width: 100%;
     border-collapse: collapse;
     margin-top: 30px;
     border: 2px solid #ddd;}
 
-th, td {padding: 12px;
+th,
+td {padding: 12px;
     text-align: center;
     border: 1px solid #ddd;}
 
 th {background-color: var(--cor-principal);
     color: white;}
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {
+    background-color: #f2f2f2;}
 
 tr:hover {background-color: #f1c40f;}
 
@@ -123,6 +136,7 @@ table a {color: var(--cor-destaque);
 
 table a:hover {background-color: var(--cor-destaque);
     color: white;}
+
 
 article {padding: 20px;
     background-color: #fff3e0;
@@ -139,6 +153,7 @@ article p {font-size: 18px;
 section {margin-bottom: 40px;
     padding: 20px;}
 
+
 h1 {font-size: var(--tamanho-titulo);
     font-weight: var(--peso-fonte-titulo);}
 
@@ -149,17 +164,63 @@ p {font-size: var(--tamanho-base);
     line-height: 1.6;
     font-weight: var(--peso-fonte-texto);}
 
-.img-fluid, .img-fluid-second {max-width: 100%;
+.img-fluid,
+.img-fluid-second {max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     border: 2px solid #ddd;
     border-radius: 8px;}
 
-@media (max-width: 767px) {
-    body {font-size: 16px;}
 
-    header h1 {font-size: 20px;}
+#menu {display: none;}
+
+#menu.aberto {display: block;}
+
+
+#botao-menu,
+#botao-fechar {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    display: block;}
+
+#botao-menu::before {
+    content: '\2630';
+}
+
+#botao-fechar::before {
+    content: '\2716';
+    display: none;}
+
+#menu.aberto #botao-fechar {
+    display: block;}
+
+#menu.aberto #botao-menu {
+    display: none;}
+
+#botao-menu:hover,
+#botao-fechar:hover {
+    background-color: rgba(0, 0, 0, 0.3);}
+
+nav:hover #menu {
+    display: block;}
+
+@media print {
+    nav, #menu, #botao-menu, #botao-fechar {
+        display: none;}}
+
+@media (max-width: 767px) {
+        body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
 
     nav ul {display: flex;
         flex-direction: column;
@@ -182,7 +243,8 @@ p {font-size: var(--tamanho-base);
     form button {padding: 12px 25px;
         font-size: 16px;}
 
-    table th, table td {padding: 8px;}
+    table th,
+    table td {padding: 8px;}
 
     table a {font-size: 14px;}
 
@@ -194,12 +256,11 @@ p {font-size: var(--tamanho-base);
 
     p {font-size: 16px;}
 
-    .img-fluid, .img-fluid-second {
-        max-width: 100%;
+    .img-fluid,
+    .img-fluid-second {max-width: 100%;
         height: auto;}
 
-    .botao-intuitivo {
-        padding: 12px 25px;
+    .botao-intuitivo {padding: 12px 25px;
         font-size: 16px;
         width: 100%;
         text-align: center;}
@@ -207,7 +268,13 @@ p {font-size: var(--tamanho-base);
     footer {font-size: 12px;
         padding: 8px 0;}
 
-    .colecao-objetos {grid-template-columns: 1fr;}}
+    #menu {display: none;}
+
+    #botao-menu {display: block;}
+
+    #botao-fechar {display: block;}
+
+    #menu.aberto {display: block;}}
 
 @media (min-width: 1024px) {
     body {font-size: 22px;}
@@ -219,23 +286,3 @@ p {font-size: var(--tamanho-base);
     .centralizado {width: 60%;}
 
     .colecao-objetos {grid-template-columns: repeat(3, 1fr);}}
-
-#menu {display: none;}
-
-#menu.aberto {display: block;}
-
-#botao-menu {display: block;}
-
-#botao-fechar {display: none;}
-
-#botao-menu.ativo + #menu {
-    display: block;}
-
-@media (max-width: 767px) {
-    #menu {display: none;}
-
-    #botao-menu {display: block;}
-
-    #botao-fechar {display: block;}
-
-    #menu.aberto {display: block;}}
