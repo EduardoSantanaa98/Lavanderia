@@ -250,6 +250,14 @@ p {font-size: var(--tamanho-base);
 #menu-toggle:checked + #botao-menu + #botao-fechar + #menu {
     display: block; }
 
+@media (min-width: 1024px) 
+
+    {#menu {display: block;}
+
+    #botao-menu {display: none;}
+
+    #botao-fechar {display: none;}}
+
 @media (max-width: 767px) {
     #menu {display: none; }
 
@@ -263,11 +271,3 @@ p {font-size: var(--tamanho-base);
 
     #menu-toggle:checked + #botao-menu + #botao-fechar + #menu {display: block; }}
 
-@media (min-width: 1024px) 
-
-    {#menu {display: block;}
-
-    #botao-menu {display: none;}
-
-    #botao-fechar {display: none;}
-}
