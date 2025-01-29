@@ -211,7 +211,7 @@ p {font-size: var(--tamanho-base);
     .colecao-objetos {grid-template-columns: 1fr;}}
 
 
-* Menu Hambúrguer */
+/* Menu Hambúrguer */
 #menu {
     display: none; /* Menu começa oculto */
 }
@@ -243,12 +243,12 @@ p {font-size: var(--tamanho-base);
     display: none; /* Esconde o ícone de hambúrguer quando o menu está aberto */
 }
 
-#menu-toggle:checked + #botao-menu + #menu {
-    display: block; /* Exibe o menu quando o checkbox está marcado */
-}
-
 #menu-toggle:checked + #botao-menu + #botao-fechar {
     display: block; /* Exibe o ícone de fechar quando o menu está aberto */
+}
+
+#menu-toggle:checked + #botao-menu + #botao-fechar + #menu {
+    display: block; /* Exibe o menu quando o checkbox está marcado */
 }
 
 /* Responsividade para telas pequenas */
