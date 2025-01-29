@@ -211,35 +211,83 @@ p {font-size: var(--tamanho-base);
     .colecao-objetos {grid-template-columns: 1fr;}}
 
 
-#menu {display: none;}
+* Menu Hambúrguer */
+#menu {
+    display: none; /* Menu começa oculto */
+}
 
-#menu.aberto {display: block;}
+#botao-menu {
+    display: block; /* Ícone de hambúrguer visível inicialmente */
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
 
-#botao-menu {display: block;}
+#botao-fechar {
+    display: none; /* Ícone de fechar começa oculto */
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
 
-#botao-fechar {display: none;}
+#menu-toggle {
+    display: none; /* O checkbox é invisível */
+}
 
+/* Exibição do menu quando o checkbox está marcado */
 #menu-toggle:checked + #botao-menu {
-    display: none;}
+    display: none; /* Esconde o ícone de hambúrguer quando o menu está aberto */
+}
 
-#menu-toggle:checked + #botao-menu + #botao-fechar {display: block;}
+#menu-toggle:checked + #botao-menu + #menu {
+    display: block; /* Exibe o menu quando o checkbox está marcado */
+}
 
+#menu-toggle:checked + #botao-menu + #botao-fechar {
+    display: block; /* Exibe o ícone de fechar quando o menu está aberto */
+}
+
+/* Responsividade para telas pequenas */
 @media (max-width: 767px) {
-    #menu {display: none;}
+    #menu {
+        display: none; /* Menu oculto por padrão em telas pequenas */
+    }
 
-    #botao-menu {display: block;}
+    #botao-menu {
+        display: block; /* Ícone de hambúrguer visível */
+    }
 
-    #botao-fechar {display: block; }
+    #botao-fechar {
+        display: none; /* Ícone de fechar oculto inicialmente */
+    }
 
-    #menu-toggle:checked + #botao-menu {display: none; }
+    #menu-toggle:checked + #botao-menu {
+        display: none; /* Esconde o ícone de hambúrguer quando o menu está aberto */
+    }
 
-    #menu-toggle:checked + #botao-menu + #botao-fechar {display: block;}
+    #menu-toggle:checked + #botao-menu + #botao-fechar {
+        display: block; /* Exibe o ícone de fechar quando o menu está aberto */
+    }
 
-    #menu-toggle:checked + #botao-menu + #botao-fechar + #menu {display: block;}}
+    #menu-toggle:checked + #botao-menu + #botao-fechar + #menu {
+        display: block; /* Exibe o menu quando o checkbox está marcado */
+    }
+}
 
-@media (min-width: 1024px) {#menu {display: block;}
+@media (min-width: 1024px) {
+    #menu {
+        display: block; /* Menu sempre visível em telas grandes */
+    }
 
-    #botao-menu {display: none;}
+    #botao-menu {
+        display: none; /* Esconde o ícone de hambúrguer */
+    }
 
-    #botao-fechar {display: none;}
+    #botao-fechar {
+        display: none; /* Esconde o ícone de fechar */
+    }
 }
