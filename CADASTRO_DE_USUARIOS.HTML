@@ -11,13 +11,16 @@
     <header>
         <h1>Wash Power</h1>
     </header>
-    <nav>
+<span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <nav id="itens">
         <section class="centralizado">
             <ul>
                 <li><a href="index.html">HOME</a></li>
+                <li><a href="index2.html">HOUSE</a></li>
                 <li><a href="produtos_e_serviços.html">PRODUTOS E SERVIÇOS</a></li>
                 <li><a href="sobre.html">SOBRE</a></li>
                 <li><a href="login.html">LOGIN</a></li>
+                <li><a href="CADASTRO_DE_OBJETOS.HTML">CADASTRO DE SERVIÇOS</a></li>
             </ul>
         </section>
     </nav>
@@ -78,6 +81,16 @@
             </table>
         </section>
     </main>
+<script>
+    function clickMenu() {
+        var itens = document.getElementById("itens");
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none';
+        } else {
+            itens.style.display = 'block'; 
+        }
+    }
+</script>    
     <footer>
         <section class="centralizado">
             <b>Desenvolvido por Eduardo Santana</b>
