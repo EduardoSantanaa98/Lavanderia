@@ -211,7 +211,7 @@ p {font-size: var(--tamanho-base);
     .colecao-objetos {grid-template-columns: 1fr;}}
 
 
-/* Menu Hambúrguer */
+/* Menu Hamburguer */
 #menu {
     display: none; /* Menu começa oculto */
 }
@@ -234,6 +234,7 @@ p {font-size: var(--tamanho-base);
     text-align: center;
 }
 
+/* Checkbox invisível */
 #menu-toggle {
     display: none; /* O checkbox é invisível */
 }
