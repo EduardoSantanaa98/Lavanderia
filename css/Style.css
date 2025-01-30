@@ -34,7 +34,7 @@ header h1 {color: white;
     cursor: pointer;}
 
 #burguer:hover {
- background-color: gray;
+ background-color: black;
     color: var(--cor-destaque);}
     
 nav {display: none; }
