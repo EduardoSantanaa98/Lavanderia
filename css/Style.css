@@ -28,7 +28,7 @@ header h1 {color: white;
 
 #burguer {
     background-color: #f9f9f9;
-    color: white; 
+    color: black; 
     text-align: center;
     padding: 10px;
     cursor: pointer;}
