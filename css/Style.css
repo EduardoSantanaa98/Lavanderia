@@ -23,7 +23,6 @@ body {font-family: var(--fonte-principal);
     border-radius: var(--radius-md); 
     box-shadow: var(--shadow-lg);
     padding: var(--space-md);
-    margin: var(--space-lg);
     width: 300px;
     height: 400px;}
 
