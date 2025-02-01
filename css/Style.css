@@ -18,6 +18,19 @@ body {font-family: var(--fonte-principal);
     padding: 0;
     overflow-x: hidden;}
 
+.card {
+    background-color: var(--color-background);
+    border-radius: var(--radius-md); 
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-md);
+    margin: var(--space-lg);
+    width: 300px;
+    height: 400px;}
+
+.card h2 {color: var(--color-primary);}
+
+.card p {color: var(--color-text);}
+
 header {background-color: var(--cor-principal);
     padding: 10px;
     text-align: center;
